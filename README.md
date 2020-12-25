@@ -11,7 +11,7 @@ They are both competing for the same resource:
 static mut RESOURCE: i64 = 0;
 ```
 
-This variable tells who's turn it is:
+This variable tells whose turn it is:
 
 ```rust
 static mut TURN: char = 'a';
@@ -33,7 +33,7 @@ static mut IS_A_TRYING_TO_LOCK: bool = false;
 static mut IS_B_TRING_TO_LOCK: bool = false;
 ```
 
-The thread blocks and waits for it's turn
+The thread blocks and waits for its turn
 
 ```rust
   let thread_a_handle = thread::spawn(|| loop {
